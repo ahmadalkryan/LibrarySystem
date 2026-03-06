@@ -1,0 +1,61 @@
+/* src/index.css - ·‹ Tailwind v4 „⁄ √·Ê«‰ „Œ’’… */
+@import "tailwindcss";
+
+/*  ⁄—Ì› «·√·Ê«‰ «·„Œ’’… */
+@theme {
+    /* «·√·Ê«‰ «·√”«”Ì… (Primary) - €Ì— «·ﬁÌ„ Â‰« */
+    --color-primary-50: #e6f7ff; /* √“—ﬁ ›« Õ Ãœ« */
+    --color-primary-100: #b3e3ff; /* √“—ﬁ ›« Õ */
+    --color-primary-200: #80cfff; /* √“—ﬁ ”„«ÊÌ */
+    --color-primary-300: #4db8ff; /* √“—ﬁ „ Ê”ÿ */
+    --color-primary-400: #1aa3ff; /* √“—ﬁ */
+    --color-primary-500: #0080ff; /* √“—ﬁ “«ÂÌ */
+    --color-primary-600: #0066cc; /* √“—ﬁ œ«ﬂ‰ */
+    --color-primary-700: #004c99; /* √“—ﬁ œ«ﬂ‰ Ãœ« */
+    --color-primary-800: #003366; /* √“—ﬁ ·Ì·Ì */
+    --color-primary-900: #001933; /* √“—ﬁ €«„ﬁ */
+    /* «·√·Ê«‰ «·À«‰ÊÌ… (Secondary) - €Ì— «·ﬁÌ„ Â‰« */
+    --color-secondary-50: #fff0f7; /* Ê—œÌ ›« Õ Ãœ« */
+    --color-secondary-100: #ffd6e8; /* Ê—œÌ ›« Õ */
+    --color-secondary-200: #ffadd4; /* Ê—œÌ */
+    --color-secondary-300: #ff85c0; /* Ê—œÌ „ Ê”ÿ */
+    --color-secondary-400: #ff5caa; /* Ê—œÌ “«ÂÌ */
+    --color-secondary-500: #ff3399; /* Ê—œÌ */
+    --color-secondary-600: #cc0077; /* Ê—œÌ œ«ﬂ‰ */
+    --color-secondary-700: #990059; /* Ê—œÌ €«„ﬁ */
+    --color-secondary-800: #66003b; /* Ê—œÌ œ«ﬂ‰ Ãœ« */
+    --color-secondary-900: #33001e; /* Ê—œÌ €«„ﬁ Ãœ« */
+}
+
+/*  Œ’Ì’«  ≈÷«›Ì… */
+@layer base {
+    body {
+        @apply bg-gray-50 text-gray-900;
+    }
+
+    h1 {
+        @apply text-4xl font-bold text-gray-900;
+    }
+
+    h2 {
+        @apply text-2xl font-semibold text-gray-800;
+    }
+}
+
+@layer components {
+    .btn-primary {
+        @apply bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-300 focus:outline-none focus:ring-4 focus:ring-primary-500/50;
+    }
+
+    .btn-secondary {
+        @apply bg-secondary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-secondary-700 transition-colors duration-300 focus:outline-none focus:ring-4 focus:ring-secondary-500/50;
+    }
+
+    .card {
+        @apply bg-white rounded-xl shadow-lg p-6 border border-gray-100;
+    }
+
+    .input-field {
+        @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-4 focus:ring-primary-500/50 focus:border-primary-500 transition-all duration-300;
+    }
+}
